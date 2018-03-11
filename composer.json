@@ -1,0 +1,12 @@
+{
+    "name": "haonx/social-proof-toaster",
+    "require": {
+        "fzaninotto/faker": "^1.7"
+    },
+    "authors": [
+        {
+            "name": "haonx",
+            "email": "qtvhao@gmail.com"
+        }
+    ]
+}
