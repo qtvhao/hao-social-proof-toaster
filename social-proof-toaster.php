@@ -23,6 +23,9 @@ function init_sproof_inject() {
 * functions for echoing the HTML
 */
 function sproof_inject_footer_start_html() {
+	$set = ['','set2','set3','set4'][rand(1,4)];
+	$randomSlug = rand(1,100);
+	$imageSource = "https://robohash.org/$randomSlug.png?size=100x100&set=$set";
 	$style = <<<'CSS'
       #WpBx2DbIonOp2DbIVcYt_0 div{
       
@@ -665,7 +668,7 @@ function sproof_inject_footer_start_html() {
 	
 }
 CSS;
-	$html = <<<'HTML'
+	$html = <<<HTML
 	<div id="WpBx2DbIonOp2DbIVcYt_0">
     <div id="WpBx3tRBonOp3tRBVcYt_0" class="">
         <div>
@@ -674,7 +677,7 @@ CSS;
                     <div id="WpBx2fZIonOp2fZIVcYt_0">
                         <div class="WpBx3zjZonOp3zjZVcYt_0 yp_onscreen">
                             <div class="WpBx1JYFonOp1JYFVcYt_0"><img class=""
-                                                                     src="https://firebasestorage.googleapis.com/v0/b/proof-f6589.appspot.com/o/maps%2Fc2ca8c9de6e93ee0d2348d586f1df432.png.png?alt=media">
+                                                                     src="$imageSource">
                             </div>
                             <div class="WpBx2EbConOp2EbCVcYt_0">
                                 <div class="WpBx2AUlonOp2AUlVcYt_0">Arun from New Delhi, DL</div>
