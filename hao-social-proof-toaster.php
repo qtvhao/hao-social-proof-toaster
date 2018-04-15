@@ -683,27 +683,10 @@ CSS;
                                 <div class="WpBx2PlWonOp2PlWVcYt_0">2 hours ago</div>
                                 <div class="WpBx3eNuonOp3eNuVcYt_0"></div>
                             </div>
-                            <div class="WpBx1N_EonOp1N_EVcYt_0" style="display: none;">
+                            <div class="WpBx1N_EonOp1N_EVcYt_0">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.597 17.954l-4.591-4.55-4.555 4.596-1.405-1.405 4.547-4.592-4.593-4.552 1.405-1.405 4.588 4.543 4.545-4.589 1.416 1.403-4.546 4.587 4.592 4.548-1.403 1.416z"></path>
                                 </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="display: none;">
-                    <div id="WpBx3dGionOp3dGiVcYt_0">
-                        <div class="WpBx2B_4onOp2B_4VcYt_0">
-                            <div id="WpBx3acHonOp3acHVcYt_0">
-                                <div class="WpBxH0WDonOpH0WDVcYt_0">
-                                    <div class="WpBxh0ePonOph0ePVcYt_0"></div>
-                                </div>
-                                <div class="WpBx15RvonOp15RvVcYt_0">
-                                    <div class="WpBx2fwXonOp2fwXVcYt_0"><span
-                                            class="WpBx1Jr6onOp1Jr6VcYt_0"><span>113</span></span> people
-                                    </div>
-                                    are viewing this site
-                                </div>
                             </div>
                         </div>
                     </div>
