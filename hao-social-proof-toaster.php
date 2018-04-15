@@ -27,7 +27,7 @@ function sproof_inject_footer_start_html() {
 	$randomSlug = rand(1,100);
 	$imageSource = "https://robohash.org/$randomSlug.png?size=100x100&set=$set";
 	$style = <<<'CSS'
-      #WpBx2DbIonOp2DbIVcYt_0 div{
+      #haosf_toasts_wrapper div{
       
 	-moz-osx-font-smoothing: grayscale!important;
 	color: #2c3e50;
@@ -41,13 +41,13 @@ function sproof_inject_footer_start_html() {
 	text-align: left;
 }
 
-#WpBx2DbIonOp2DbIVcYt_0 img{
+#haosf_toasts_wrapper img{
 	margin: 0;
 	padding: 0;
 	border-radius: 0;
 }
 
-#WpBx3tRBonOp3tRBVcYt_0{
+#haosf_toasts_container{
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -55,7 +55,7 @@ function sproof_inject_footer_start_html() {
 	z-index: 1000000;
 }
 
-#WpBx3tRBonOp3tRBVcYt_0.WpBxx4GfonOpx4GfVcYt_0{
+#haosf_toasts_container.WpBxx4GfonOpx4GfVcYt_0{
 	bottom: auto;
 	top: 0;
 }
@@ -547,7 +547,7 @@ function sproof_inject_footer_start_html() {
 
 @media screen and (min-width:480px){
 
-	#WpBx3tRBonOp3tRBVcYt_0.WpBx2TNmonOp2TNmVcYt_0{
+	#haosf_toasts_container.WpBx2TNmonOp2TNmVcYt_0{
 		left: auto;
 		right: 10px;
 	}
@@ -669,8 +669,8 @@ function sproof_inject_footer_start_html() {
 }
 CSS;
 	$html = <<<HTML
-	<div id="WpBx2DbIonOp2DbIVcYt_0">
-    <div id="WpBx3tRBonOp3tRBVcYt_0" class="">
+	<div id="haosf_toasts_wrapper">
+    <div id="haosf_toasts_container" class="">
         <div>
             <div style="">
                 <div style="">
