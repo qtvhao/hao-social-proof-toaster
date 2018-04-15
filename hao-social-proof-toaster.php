@@ -1,11 +1,11 @@
 <?php
 /**
  *
- * Plugin Name: Social Proof Toaster
+ * Plugin Name: Vietnam Social Proof Toaster
  * Plugin URI: https://github.com/qtvhao/social-proof-toaster
  * Author: Hao Nghiem
  * Version: 1.0.0
- * Author URI: http://haonx.taomienphi.website
+ * Author URI: https://www.linkedin.com/in/hào-nghiêm-xuân-b61a60106/
  * Text Domain: sproof
  * License: GPLv3
  */
