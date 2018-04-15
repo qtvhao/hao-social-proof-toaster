@@ -12,4 +12,11 @@ class Product_Social_Proof_Toast extends Toast {
 		$this->product = $product;
 		parent::__construct();
 	}
+
+	/**
+	 * @return \WC_Product
+	 */
+	public function getProduct() {
+		return $this->product;
+	}
 }
