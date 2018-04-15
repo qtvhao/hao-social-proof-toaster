@@ -10,7 +10,7 @@ class Toast{
 	protected function populate() {
 		$image_source = $this->get_image();
 		$close_image  = $this->get_close_image();
-		$heading     = $this->get_heading();
+		$heading     = $this->get_messages();
 		$this->html  = <<<HTML
 <div class="haosf_toast_container_side_image">
     <img class="" src="$image_source">
@@ -53,12 +53,12 @@ HTML;
 HTML;
 	}
 
-	protected function get_heading() {
+	protected function get_messages() {
 		return <<<HTML
-		<div class="haosf_toast_person"><span class="haosf_toast_person_name">Arun</span> from <span
+		<div class="haosf_toast_message_top"><span class="haosf_toast_person_name">Arun</span> from <span
                 class="haosf_toast_person_address">New Delhi, DL</span></div>
-        <div class="haosf_toast_message">Recently signed up for Proof</div>
-        <div class="haosf_toast_time_diff">2 hours ago</div>
+        <div class="haosf_toast_message_middle">Recently signed up for Proof</div>
+        <div class="haosf_toast_bottom">2 hours ago</div>
 HTML;
 	}
 

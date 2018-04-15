@@ -44,24 +44,24 @@
     margin-left: 70px;
     padding-right: 8px;
 }
-#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .haosf_toast_person, #haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .haosf_toast_message {
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .haosf_toast_message_top, #haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .haosf_toast_message_middle {
     display: block;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow-x: hidden;
 }
-#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .haosf_toast_person {
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .haosf_toast_message_top {
     line-height: 17.5px;
     font-size: 14px;
     font-weight: 700;
     color: #222;
 }
-#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .haosf_toast_message {
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .haosf_toast_message_middle {
     line-height: 17.5px;
     font-size: 12px;
     color: #738c98;
 }
-#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .haosf_toast_time_diff {
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .haosf_toast_bottom {
     line-height: 1em;
     display: inline-block;
     color: #90a4ae;
