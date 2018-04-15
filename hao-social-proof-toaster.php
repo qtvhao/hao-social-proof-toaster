@@ -70,5 +70,5 @@ HTML;
     </div>
 </div>
 HTML;
-	echo $html . "<style>$style</style>";
+	echo $html;
 }
