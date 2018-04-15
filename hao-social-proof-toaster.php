@@ -64,11 +64,11 @@ function sproof_inject_footer_start_html() {
 	animation: bounceBottomUp 1.1s linear both;
 }
 
-#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0.WpBx2mQFonOp2mQFVcYt_0{
+#haosf_toast_wrapper_1997 .haosf_toast_container.WpBx2mQFonOp2mQFVcYt_0{
 	border-radius: 0 0 10px 10px;
 }
 
-#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0 .WpBx1JYFonOp1JYFVcYt_0{
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_side_image{
 	display: block;
 	position: absolute;
 	float: left;
@@ -78,43 +78,43 @@ function sproof_inject_footer_start_html() {
 	width: 64px;
 }
 
-#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0 .WpBx1JYFonOp1JYFVcYt_0 img{
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_side_image img{
 	border-radius: 10px;
 }
 
-#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0 .WpBx2EbConOp2EbCVcYt_0{
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading{
 	margin-left: 70px;
 	padding-right: 8px;
 }
 
-#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0 .WpBx2EbConOp2EbCVcYt_0 .WpBx2AUlonOp2AUlVcYt_0,#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0 .WpBx2EbConOp2EbCVcYt_0 .WpBx13BWonOp13BWVcYt_0{
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .haosf_toast_person,#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .haosf_toast_message{
 	display: block;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow-x: hidden;
 }
 
-#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0 .WpBx2EbConOp2EbCVcYt_0 .WpBx2AUlonOp2AUlVcYt_0{
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .haosf_toast_person{
 	line-height: 17.5px;
 	font-size: 14px;
 	font-weight: 700;
 	color: #222;
 }
 
-#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0 .WpBx2EbConOp2EbCVcYt_0 .WpBx13BWonOp13BWVcYt_0{
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .haosf_toast_message{
 	line-height: 17.5px;
 	font-size: 12px;
 	color: #738c98;
 }
 
-#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0 .WpBx2EbConOp2EbCVcYt_0 .WpBx2PlWonOp2PlWVcYt_0{
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .haosf_toast_time_diff{
 	line-height: 1em;
 	display: inline-block;
 	color: #90a4ae;
 	font-size: 11px;
 }
 
-#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0 .WpBx2EbConOp2EbCVcYt_0 .WpBx3eNuonOp3eNuVcYt_0{
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .WpBx3eNuonOp3eNuVcYt_0{
 	margin-left: 2px;
 	display: inline-block;
 	position: relative;
@@ -129,7 +129,7 @@ function sproof_inject_footer_start_html() {
 	background-color: #fff;
 }
 
-#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0 .WpBx2EbConOp2EbCVcYt_0 .WpBx3eNuonOp3eNuVcYt_0 i{
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .WpBx3eNuonOp3eNuVcYt_0 i{
 	display: inline;
 	margin: -3px 2px;
 	vertical-align: middle;
@@ -137,16 +137,16 @@ function sproof_inject_footer_start_html() {
 	font-size: .75rem;
 }
 
-#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0 .WpBx2EbConOp2EbCVcYt_0 .WpBx3eNuonOp3eNuVcYt_0 i svg{
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .WpBx3eNuonOp3eNuVcYt_0 i svg{
 	overflow: hidden;
 }
 
-#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0 .WpBx2EbConOp2EbCVcYt_0 .WpBx3eNuonOp3eNuVcYt_0 .WpBx12wMonOp12wMVcYt_0{
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_heading .WpBx3eNuonOp3eNuVcYt_0 .WpBx12wMonOp12wMVcYt_0{
 	color: #0089d8;
 	text-decoration: none!important;
 }
 
-#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0 .WpBx1N_EonOp1N_EVcYt_0{
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_button_close_wrapper{
 	cursor: pointer;
 	position: absolute;
 	right: 18px;
@@ -158,7 +158,7 @@ function sproof_inject_footer_start_html() {
 	padding: 0;
 }
 
-#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0 .WpBx1N_EonOp1N_EVcYt_0 svg{
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_button_close_wrapper svg{
 	width: 11px;
 	height: 11px;
 	margin: 0;
@@ -166,7 +166,7 @@ function sproof_inject_footer_start_html() {
 	display: inline-block;
 }
 
-#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0 .WpBx1N_EonOp1N_EVcYt_0:hover{
+#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_button_close_wrapper:hover{
 	opacity: .4;
 }
 
@@ -521,30 +521,30 @@ function sproof_inject_footer_start_html() {
 	opacity: 1;
 }
 
-.WpBx3zjZonOp3zjZVcYt_0{
+.haosf_toast_container{
 	height:70px;
 	position: relative;
 	padding: 10px!important;
 }
 
-.elementor-widget-html div .WpBx3zjZonOp3zjZVcYt_0{
+.elementor-widget-html div .haosf_toast_container{
 	background-color:#ffffff;
 }
 @-webkit-keyframes slideInUp{
 0%{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}
 100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}
 @keyframes slideInUp{0%{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}
-.WpBx3zjZonOp3zjZVcYt_0.yp_onscreen{
+.haosf_toast_container.haosf_slideInUp{
 	animation-name:slideInUp;
 	animation-delay:0s;
 	animation-duration:0.82s;
 }
 
-.elementor-widget-html div .WpBx2EbConOp2EbCVcYt_0{
+.elementor-widget-html div .haosf_toast_container_heading{
 	padding-left:12px !important;
 }
 
-.WpBx2EbConOp2EbCVcYt_0{
+.haosf_toast_container_heading{
 	line-height: 12px;
 }
 
@@ -555,11 +555,11 @@ function sproof_inject_footer_start_html() {
 		right: 10px;
 	}
 	
-	#WpBx2fZIonOp2fZIVcYt_0{
+	#haosf_toast_wrapper_1997{
 		right: auto;
 	}
 	
-	#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0{
+	#haosf_toast_wrapper_1997 .haosf_toast_container{
 		background: white;
 		width: 320px;
 		margin: 0 0 10px 10px;
@@ -568,27 +568,27 @@ function sproof_inject_footer_start_html() {
 		-webkit-box-shadow: 0 0 1px rgba(0,0,0,.2),0 1px 2px rgba(0,0,0,.05),0 8px 50px rgba(0,0,0,.05);
 	}
 	
-	#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0.WpBx3SlronOp3SlrVcYt_0{
+	#haosf_toast_wrapper_1997 .haosf_toast_container.WpBx3SlronOp3SlrVcYt_0{
 		border-radius: 5px;
 	}
 	
-	#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0.WpBx2riIonOp2riIVcYt_0{
+	#haosf_toast_wrapper_1997 .haosf_toast_container.WpBx2riIonOp2riIVcYt_0{
 		cursor: pointer;
 		transition: all .1s ease-in-out;
 	}
 	
-	body.yp-selector-hover #WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0.WpBx2riIonOp2riIVcYt_0{
+	body.yp-selector-hover #haosf_toast_wrapper_1997 .haosf_toast_container.WpBx2riIonOp2riIVcYt_0{
 		box-shadow: 0 0 1px rgba(0,0,0,.1),0 3px 6px rgba(0,0,0,.05),0 8px 50px rgba(0,0,0,.2);
 		-webkit-box-shadow: 0 0 1px rgba(0,0,0,.1),0 3px 6px rgba(0,0,0,.05),0 8px 50px rgba(0,0,0,.2);
 		transform: translateY(-3px);
 		-webkit-transform: translateY(-3px);
 	}
 	
-	#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0 .WpBx1JYFonOp1JYFVcYt_0 img{
+	#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_side_image img{
 		border-radius: 50%;
 	}
 	
-	#WpBx2fZIonOp2fZIVcYt_0 .WpBx3zjZonOp3zjZVcYt_0 .WpBx1JYFonOp1JYFVcYt_0 img.WpBx3SlronOp3SlrVcYt_0{
+	#haosf_toast_wrapper_1997 .haosf_toast_container .haosf_toast_container_side_image img.WpBx3SlronOp3SlrVcYt_0{
 		border-radius: 5px;
 	}
 	
@@ -675,18 +675,19 @@ CSS;
 	
             <div style="">
                 <div style="">
-                    <div id="WpBx2fZIonOp2fZIVcYt_0">
-                        <div class="WpBx3zjZonOp3zjZVcYt_0 yp_onscreen">
-                            <div class="WpBx1JYFonOp1JYFVcYt_0"><img class=""
-                                                                     src="$imageSource">
+                    <div id="haosf_toast_wrapper_1997">
+                        <div class="haosf_toast_container haosf_slideInUp">
+                            <div class="haosf_toast_container_side_image">
+                            	<img class="" src="$imageSource">
                             </div>
-                            <div class="WpBx2EbConOp2EbCVcYt_0">
-                                <div class="WpBx2AUlonOp2AUlVcYt_0">Arun from New Delhi, DL</div>
-                                <div class="WpBx13BWonOp13BWVcYt_0">Recently signed up for Proof</div>
-                                <div class="WpBx2PlWonOp2PlWVcYt_0">2 hours ago</div>
-                                <div class="WpBx3eNuonOp3eNuVcYt_0"></div>
-                            </div>
-                            <div class="WpBx1N_EonOp1N_EVcYt_0">
+                            <div class="haosf_toast_wrapper_heading">
+	                            <div class="haosf_toast_container_heading">
+	                                <div class="haosf_toast_person"><span class="haosf_toast_person_name">Arun</span> from <span class="haosf_toast_person_address">New Delhi, DL</span></div>
+	                                <div class="haosf_toast_message">Recently signed up for Proof</div>
+	                                <div class="haosf_toast_time_diff">2 hours ago</div>
+	                            </div>
+							</div>
+                            <div class="haosf_toast_button_close_wrapper">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.597 17.954l-4.591-4.55-4.555 4.596-1.405-1.405 4.547-4.592-4.593-4.552 1.405-1.405 4.588 4.543 4.545-4.589 1.416 1.403-4.546 4.587 4.592 4.548-1.403 1.416z"></path>
                                 </svg>
