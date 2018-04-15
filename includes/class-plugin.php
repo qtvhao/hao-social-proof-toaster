@@ -13,6 +13,7 @@ class Plugin {
 			if(strpos( $class, 'Haosf_Social_Proof_Toaster') === 0) {
 				$class = str_replace( '_', '-', $class);
 				$class = str_replace( 'Haosf-Social-Proof-Toaster\\', '', $class);
+				$class = strtolower( $class);
 				require_once "class-$class.php";
 			}
 		});
@@ -50,11 +51,15 @@ HTML;
 	}
 
 	private function get_toasts() {
-		$toast = new Toast();
+		$toastHtml = '';
+		if ( is_product() ) {
+			$toast = new Product_Social_Proof_Toast(wc_get_product());
+			$toastHtml .= $toast;
+		}
 		$toasts       = <<<HTML
 <div id="haosf_toast_wrapper_1997">
     <div class="haosf_toast_container haosf_slideInUp">
-        $toast
+        $toastHtml
     </div>
 </div>
 HTML;

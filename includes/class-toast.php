@@ -7,7 +7,7 @@ class Toast{
 		$this->populate();
 	}
 
-	private function populate() {
+	protected function populate() {
 		$image_source = $this->get_image();
 		$close_image  = $this->get_close_image();
 		$heading     = $this->get_heading();
@@ -26,7 +26,7 @@ class Toast{
 HTML;
 	}
 
-	private function get_image() {
+	protected function get_image() {
 		$set          = [ '', 'set2', 'set3', 'set4' ][ rand( 1, 4 ) ];
 		$randomSlug   = rand( 1, 100 );
 		$imageSource  = "https://robohash.org/$randomSlug.png?size=100x100&set=$set";
@@ -53,7 +53,7 @@ HTML;
 HTML;
 	}
 
-	private function get_heading() {
+	protected function get_heading() {
 		return <<<HTML
 		<div class="haosf_toast_person"><span class="haosf_toast_person_name">Arun</span> from <span
                 class="haosf_toast_person_address">New Delhi, DL</span></div>
