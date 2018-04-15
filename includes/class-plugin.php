@@ -24,6 +24,25 @@ class Plugin {
 	}
 
 	public function render_hidden_toasts() {
+		$toasts = $this->get_toasts();
+		$html   = <<<HTML
+<div id="haosf_toasts_wrapper">
+    <div id="haosf_toasts_container" class="">
+        <div>
+            $toasts
+        </div>
+    </div>
+</div>
+HTML;
+		echo $html;
+	}
+
+
+	public function enqueue_styles() {
+		wp_enqueue_style( 'haosf-social-proof-toaster-main-css', HAOSF_ASSETS_URL . 'css/haosf-main.css' );
+	}
+
+	private function get_toasts() {
 		$set          = [ '', 'set2', 'set3', 'set4' ][ rand( 1, 4 ) ];
 		$randomSlug   = rand( 1, 100 );
 		$imageSource  = "https://robohash.org/$randomSlug.png?size=100x100&set=$set";
@@ -52,20 +71,8 @@ HTML;
     </div>
 </div>
 HTML;
-		$html         = <<<HTML
-<div id="haosf_toasts_wrapper">
-    <div id="haosf_toasts_container" class="">
-        <div>
-            $toasts
-        </div>
-    </div>
-</div>
-HTML;
-		echo $html;
-	}
 
+		return $toasts;
 
-	public function enqueue_styles() {
-		wp_enqueue_style( 'haosf-social-proof-toaster-main-css', HAOSF_ASSETS_URL . 'css/haosf-main.css' );
 	}
 }
