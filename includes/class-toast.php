@@ -54,12 +54,29 @@ HTML;
 	}
 
 	protected function get_messages() {
+		$message_top = $this->get_message_top();
+		$message_middle = $this->get_message_middle();
+		$message_bottom = $this->get_message_bottom();
+
 		return <<<HTML
-		<div class="haosf_toast_message_top"><span class="haosf_toast_person_name">Arun</span> from <span
-                class="haosf_toast_person_address">New Delhi, DL</span></div>
-        <div class="haosf_toast_message_middle">Recently signed up for Proof</div>
-        <div class="haosf_toast_bottom">2 hours ago</div>
+		<div class="haosf_toast_message_top">$message_top</div>
+        <div class="haosf_toast_message_middle">$message_middle</div>
+        <div class="haosf_toast_bottom">$message_bottom</div>
 HTML;
 	}
 
+	protected function get_message_top() {
+		return <<<HTML
+		<span class="haosf_toast_person_name">Arun</span> from <span
+                class="haosf_toast_person_address">New Delhi, DL</span>
+HTML;
+	}
+
+	protected function get_message_middle() {
+		return "Recently signed up for Proof";
+	}
+
+	protected function get_message_bottom() {
+		return "2 hours ago";
+	}
 }
