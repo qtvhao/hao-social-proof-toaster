@@ -53,8 +53,8 @@ HTML;
 	private function get_toasts() {
 		$toastHtml = '';
 		if ( is_product() ) {
-			$toast = new Product_Social_Proof_Toast(wc_get_product());
-			$toastHtml .= $toast;
+			$toast        = new Order_Count_Product_Social_Proof_Toast(wc_get_product() );
+			$toastHtml    .= $toast;
 		}
 		$toasts       = <<<HTML
 <div id="haosf_toast_wrapper_1997">
