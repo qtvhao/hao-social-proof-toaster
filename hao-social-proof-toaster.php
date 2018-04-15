@@ -168,8 +168,15 @@ function sproof_inject_footer_start_html() {
 .haosf_toast_container_heading{
 	line-height: 12px;
 }
-
+#haosf_toast_wrapper_1997 {
+    background: white;
+    box-shadow: -1px 0px 2px #0000004a;
+}
 @media screen and (min-width:480px){
+#haosf_toast_wrapper_1997 {
+    background: unset;
+    box-shadow: unset;
+}
 
 	#haosf_toast_wrapper_1997{
 		right: auto;
