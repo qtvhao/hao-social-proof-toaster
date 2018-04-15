@@ -9,6 +9,13 @@ class Plugin {
 	private static $instance;
 
 	public static function autoload() {
+		spl_autoload_register(function($class) {
+			if(strpos( $class, 'Haosf_Social_Proof_Toaster') === 0) {
+				$class = str_replace( '_', '-', $class);
+				$class = str_replace( 'Haosf-Social-Proof-Toaster\\', '', $class);
+				require_once "class-$class.php";
+			}
+		});
 	}
 
 	public static function instance() {
