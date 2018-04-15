@@ -14,6 +14,8 @@
 * Init the plugin
 */
 
+use Haosf_Social_Proof_Toaster\Plugin;
+
 define( 'HAOSF_VERSION', '1.0.0' );
 
 define( 'HAOSF__FILE__', __FILE__ );
@@ -23,11 +25,9 @@ define( 'HAOSF_PATH', plugin_dir_path( HAOSF__FILE__ ) );
 define( 'HAOSF_URL', plugins_url( '/', HAOSF__FILE__ ) );
 define( 'HAOSF_ASSETS_URL', HAOSF_URL . 'assets/' );
 
-add_action('init', 'init_haosf');
-function init_haosf() {
-	add_action('wp_footer', 'haosf_footer', 0);
-	wp_enqueue_style( 'haosf-social-proof-toaster-main-css', HAOSF_ASSETS_URL . 'css/haosf-main.css');
-}
+require_once 'includes/class-plugin.php';
+Plugin::autoload();
+add_action('init', [Plugin::instance(), 'init_hooks']);
 
 /*
 * functions for echoing the HTML
