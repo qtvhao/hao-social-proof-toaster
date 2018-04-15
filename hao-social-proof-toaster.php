@@ -668,10 +668,8 @@ function sproof_inject_footer_start_html() {
 	
 }
 CSS;
-	$html = <<<HTML
-	<div id="haosf_toasts_wrapper">
-    <div id="haosf_toasts_container" class="">
-        <div>
+	$toasts = <<<HTML
+	
             <div style="">
                 <div style="">
                     <div id="WpBx2fZIonOp2fZIVcYt_0">
@@ -711,6 +709,12 @@ CSS;
                     </div>
                 </div>
             </div>
+HTML;
+	$html = <<<HTML
+	<div id="haosf_toasts_wrapper">
+    <div id="haosf_toasts_container" class="">
+        <div>
+        $toasts
         </div>
     </div>
     <div></div>
