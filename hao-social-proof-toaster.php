@@ -14,15 +14,15 @@
 * Init the plugin
 */
 
-add_action('init', 'init_sproof_inject');
-function init_sproof_inject() {
-	add_action('wp_footer', 'sproof_inject_footer_start_html', 0);
+add_action('init', 'init_haosf');
+function init_haosf() {
+	add_action('wp_footer', 'haosf_footer', 0);
 }
 
 /*
 * functions for echoing the HTML
 */
-function sproof_inject_footer_start_html() {
+function haosf_footer() {
 	$set = ['','set2','set3','set4'][rand(1,4)];
 	$randomSlug = rand(1,100);
 	$imageSource = "https://robohash.org/$randomSlug.png?size=100x100&set=$set";
