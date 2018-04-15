@@ -6,7 +6,7 @@
  * Author: Hao Nghiem
  * Version: 1.0.0
  * Author URI: https://www.linkedin.com/in/hào-nghiêm-xuân-b61a60106/
- * Text Domain: sproof
+ * Text Domain: haosf
  * License: GPLv3
  */
 
