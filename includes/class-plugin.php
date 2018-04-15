@@ -21,6 +21,9 @@ class Plugin {
 
 	public function init_hooks() {
 		add_action('wp_footer', 'haosf_footer', 0);
+	}
+
+	public function enqueue_styles() {
 		wp_enqueue_style( 'haosf-social-proof-toaster-main-css', HAOSF_ASSETS_URL . 'css/haosf-main.css');
 	}
 }
