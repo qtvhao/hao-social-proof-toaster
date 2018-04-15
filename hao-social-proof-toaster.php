@@ -530,8 +530,11 @@ function sproof_inject_footer_start_html() {
 .elementor-widget-html div .WpBx3zjZonOp3zjZVcYt_0{
 	background-color:#ffffff;
 }
-
-.elementor-widget-html div .WpBx3zjZonOp3zjZVcYt_0.yp_onscreen{
+@-webkit-keyframes slideInUp{
+0%{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}
+100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}
+@keyframes slideInUp{0%{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}
+.WpBx3zjZonOp3zjZVcYt_0.yp_onscreen{
 	animation-name:slideInUp;
 	animation-delay:0s;
 	animation-duration:0.82s;
