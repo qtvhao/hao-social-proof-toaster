@@ -35,7 +35,7 @@ class Plugin {
 		$page_title  = __('About - Social Proof Toaster', 'haosf');
 		$menu_title  = __('About - Social Proof Toaster', 'haosf');
 		$menu_slug   = 'haosf-proof-toaster-about';
-		add_submenu_page( $parent_slug, $page_title, $menu_title, 'manage_options', $menu_slug, [$this, 'about_page']);
+		add_submenu_page( 'index.php', $page_title, $menu_title, 'manage_options', $menu_slug, [$this, 'about_page']);
 	}
 
 	public function setting_page() {
