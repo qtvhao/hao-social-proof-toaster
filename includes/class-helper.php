@@ -23,7 +23,7 @@ class Helper {
 	 */
 	public static function get_total_sales_per_product( $product_id = '' ) {
 		global $wpdb;
-		$post_status = array( 'wc-completed', 'wc-processing', 'wc-on-hold' );
+		$post_status = Helper::get_available_post_statuses('shop_order');
 		$order_items = $wpdb->get_row( $wpdb->prepare( " SELECT SUM( order_item_meta.meta_value ) as _qty, SUM( order_item_meta_3.meta_value ) as _line_total FROM {$wpdb->prefix}woocommerce_order_items as order_items
 
 			LEFT JOIN {$wpdb->prefix}woocommerce_order_itemmeta as order_item_meta ON order_items.order_item_id = order_item_meta.order_item_id
@@ -86,5 +86,11 @@ class Helper {
 			}
 		}
 		return $total;
+	}
+
+	private static function get_available_post_statuses( $type ) {
+		$stati = wp_count_posts($type);
+
+		return array_keys(get_object_vars($stati));
 	}
 }
