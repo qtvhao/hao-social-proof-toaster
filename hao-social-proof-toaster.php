@@ -30,3 +30,4 @@ Plugin::autoload();
 add_action('init', [Plugin::instance(), 'init_hooks']);
 add_action('admin_menu', [Plugin::instance(), 'admin_menu']);
 add_action('wp_enqueue_scripts',[Plugin::instance(),'enqueue_styles']);
+load_plugin_textdomain( 'haosf', false, plugin_basename( dirname( HAOSF_PLUGIN_BASE ) ) . '/i18n/languages' );
