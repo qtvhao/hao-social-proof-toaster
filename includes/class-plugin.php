@@ -33,7 +33,9 @@ class Plugin {
 
 	public static function instance() {
 		if ( is_null( self::$instance ) ) {
+			do_action( 'haosf_before_instantiate' );
 			self::$instance = new self();
+			do_action( 'haosf_after_instantiate' );
 		}
 
 		return self::$instance;
@@ -60,10 +62,11 @@ HTML;
 
 	public function enqueue_styles() {
 		wp_enqueue_style( 'haosf-social-proof-toaster-main-css', HAOSF_ASSETS_URL . 'css/haosf-main.css' );
+		do_action('haosf_after_enqueue_styles');
 	}
 
 	private function get_toasts() {
-		$toasts_html = '';
+		$toasts_html = apply_filters('haosf_default_toasts', '');
 		$WC_product  = wc_get_product();
 		if ( is_product() and $WC_product instanceof \WC_Product and $this->setting('shown_in_product_page', true)) {
 			$product_id     = $WC_product->get_id();
@@ -75,10 +78,12 @@ HTML;
 			$is_hidden_product_not_sold = $this->setting('hidden_for_product_not_sold_yet', true );
 			if ( $is_product_ordered and $is_product_sold ) {
 				$toast_html  = new Order_Count_Product_Social_Proof_Toast( $WC_product );
+				$toast_html  = apply_filters('haosf_prepare_toast', $toast_html);
 				$toasts_html .= $toast_html;
 			} else {
 				if ( ! $is_hidden_product_not_sold ) {
 					$toast_html  = new Order_Count_Product_Social_Proof_Toast( $WC_product );
+					$toast_html  = apply_filters('haosf_prepare_toast', $toast_html);
 					$toasts_html .= $toast_html;
 				}
 			}
