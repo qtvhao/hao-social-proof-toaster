@@ -108,7 +108,7 @@ HTML;
 	 *
 	 * @return mixed
 	 */
-	private function setting($name, $default = false) {
+	public function setting($name, $default = false) {
 		return get_option( 'haosf_toast_' . $name, $default);
 	}
 }
