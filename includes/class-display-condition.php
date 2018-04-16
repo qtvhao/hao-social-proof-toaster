@@ -11,6 +11,9 @@ namespace Haosf_Social_Proof_Toaster;
 
 class Display_Condition {
 	public function is_toast_on_this_product_page() {
+		if( ! function_exists( 'wc_get_product')) {
+			return false;
+		}
 		$WC_product = wc_get_product();
 		if ( is_product() and $WC_product instanceof \WC_Product and Plugin::instance()->setting( 'shown_in_product_page',
 				true ) ) {
