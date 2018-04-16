@@ -31,7 +31,7 @@ add_filter('haosf_default_toasts', function($toasts) {
 
 		$session_base_unit_product_key = 'haosf_base_unit_sold_' . wc_get_product()->get_id();
 		$session_name_index_product_key = 'haosf_buyer_name_index_' . wc_get_product()->get_id();
-		$base_unit_sold      = isset($_SESSION[ $session_base_unit_product_key ])?$_SESSION[ $session_base_unit_product_key ]: rand( 1000, 2000 );
+		$base_unit_sold      = isset($_SESSION[ $session_base_unit_product_key ])?$_SESSION[ $session_base_unit_product_key ]: rand( 11000, 17000 );
 		$buyer_name_index      = isset($_SESSION[ $session_name_index_product_key ])?$_SESSION[ $session_name_index_product_key ]: rand(0, count($names_repository) - 1);
 
 		$_SESSION[ $session_base_unit_product_key ] = $base_unit_sold;
