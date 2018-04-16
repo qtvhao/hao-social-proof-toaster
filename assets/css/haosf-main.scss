@@ -160,6 +160,9 @@
 }
 
 @media screen and (min-width: 480px) {
+  #haosf_toasts_container{
+    width:0;
+  }
   #haosf_toast_wrapper_1997 {
     background: unset;
     box-shadow: unset;
