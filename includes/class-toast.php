@@ -12,6 +12,8 @@ class Toast{
 		$close_image  = $this->get_close_image();
 		$heading     = $this->get_messages();
 		$this->html  = <<<HTML
+<div id="haosf_toast_wrapper_1997">
+    <div class="haosf_toast_container haosf_slideInUp">
 <div class="haosf_toast_container_side_image">
     <img class="" src="$image_source">
 </div>
@@ -22,6 +24,8 @@ class Toast{
 </div>
 <div class="haosf_toast_button_close_wrapper">
     $close_image
+</div>
+</div>
 </div>
 HTML;
 	}

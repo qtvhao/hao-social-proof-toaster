@@ -51,23 +51,16 @@ HTML;
 	}
 
 	private function get_toasts() {
-		$toast_html = '';
+		$toasts_html = '';
 		if ( is_product() and wc_get_product() instanceof \WC_Product) {
-			$toast        = new Order_Count_Product_Social_Proof_Toast(wc_get_product() );
-			$toast_html    .= $toast;
+			$toast_html        = new Order_Count_Product_Social_Proof_Toast(wc_get_product() );
+			$toasts_html    .= $toast_html;
 		}
-		if(empty($toast_html)) {
+		if(empty($toasts_html)) {
 			return '';
 		}
-		$toasts       = <<<HTML
-<div id="haosf_toast_wrapper_1997">
-    <div class="haosf_toast_container haosf_slideInUp">
-        $toast_html
-    </div>
-</div>
-HTML;
 
-		return $toasts;
+		return $toasts_html;
 
 	}
 }
