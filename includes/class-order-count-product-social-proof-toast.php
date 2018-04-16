@@ -3,6 +3,7 @@
 namespace Haosf_Social_Proof_Toaster;
 
 use WC_Order;
+use WC_Order_Item_Product;
 
 class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast{
 	public function __construct( \WC_Product $product ) {
@@ -23,9 +24,9 @@ class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast{
 				// If product doesn't exist in order total
 				// then create it with quantity
 				if( ! array_key_exists( $item['product_id'], $total ) ) {
-					$total[$item['product_id']] = (int) $item['qty'];
+					$total[$item['product_id']] = [$item];
 				} else {
-					$total[$item['product_id']] += (int) $item['qty'];
+					$total[$item['product_id']][] = $item;
 				}
 			}
 		}
@@ -33,14 +34,11 @@ class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast{
 	}
 	protected function get_message_top() {
 		$product_orders = $this->get_product_orders();
+		$order_item_product = $product_orders[0];
+		/** @var WC_Order_Item_Product $order_item_product */
+		$shipping_full_name = $order_item_product->get_order()->get_formatted_shipping_full_name();
 
-		if ( isset($product_orders) ) {
-			$orders_count = count($product_orders);
-		} else {
-			$orders_count = 0;
-		}
-
-		return sprintf(_n('Someone just bought', '%s people just bought', $orders_count, 'haosf'), $orders_count);
+		return sprintf(__('%s just bought', 'haosf'), $shipping_full_name);
 	}
 
 	protected function get_message_middle() {
@@ -80,7 +78,9 @@ class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast{
 	}
 
 	protected function get_message_bottom() {
-		return __('Just now', 'haosf');
+		$total_sales = static::get_total_sales_per_product($this->get_product()->get_id())->_qty;
+
+		return sprintf(__('Units Sold: %s', 'haosf'), $total_sales );
 	}
 
 	private function get_product_orders() {
