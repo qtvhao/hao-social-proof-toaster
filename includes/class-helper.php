@@ -10,10 +10,15 @@ namespace Haosf_Social_Proof_Toaster;
 
 
 use WC_Order;
+use WC_Order_Item_Product;
 
 class Helper {
+	/**
+	 * @param $product_id
+	 *
+	 * @return WC_Order_Item_Product[]
+	 */
 	public static function get_product_orders($product_id) {
-
 		$order_ids    = array_map( function ( $order ) {
 			return $order->id;
 		}, wc_get_orders( [] ) );
@@ -25,9 +30,14 @@ class Helper {
 		return $total_orders[$product_id];
 	}
 
+	/**
+	 * @param $orders
+	 *
+	 * @return array
+	 */
 	public static function get_order_product_count( $orders ) {
 		if( ! isset( $orders ) || empty( $orders ) || ! is_array( $orders ) )
-			return 0;
+			return [];
 		$total = array();
 		foreach( $orders as $order ) {
 			$items = new WC_Order( $order );
