@@ -28,4 +28,5 @@ define( 'HAOSF_ASSETS_URL', HAOSF_URL . 'assets/' );
 require_once 'includes/class-plugin.php';
 Plugin::autoload();
 add_action('init', [Plugin::instance(), 'init_hooks']);
+add_action('admin_menu', [Plugin::instance(), 'admin_menu']);
 add_action('wp_enqueue_scripts',[Plugin::instance(),'enqueue_styles']);

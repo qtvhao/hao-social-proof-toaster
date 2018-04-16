@@ -19,6 +19,18 @@ class Plugin {
 		});
 	}
 
+	public function admin_menu() {
+		$parent_slug = 'options-general.php';
+		$page_title  = __('Vietnam Social Proof Toaster', 'haosf');
+		$menu_title  = __('Vietnam Social Proof Toaster', 'haosf');
+		$menu_slug   = 'haosf-proof-toaster';
+		add_submenu_page( $parent_slug, $page_title, $menu_title, 'manage_options', $menu_slug, [$this, 'setting_page']);
+	}
+
+	public function setting_page() {
+		require_once 'pages/settings.php';
+	}
+
 	public static function instance() {
 		if ( is_null( self::$instance ) ) {
 			self::$instance = new self();
