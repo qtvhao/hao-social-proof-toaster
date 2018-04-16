@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Vietnam Social Proof Toaster\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-16 14:31+0000\n"
-"PO-Revision-Date: 2018-04-16 14:40+0000\n"
+"PO-Revision-Date: 2018-04-16 15:10+0000\n"
 "Last-Translator: root <qtvhao@gmail.com>\n"
 "Language-Team: Tiếng Việt\n"
 "Language: vi\n"
@@ -15,7 +15,7 @@ msgstr ""
 
 #: includes/class-order-count-product-social-proof-toast.php:26
 msgid "Someone"
-msgstr ""
+msgstr "Ai đó"
 
 #: includes/class-order-count-product-social-proof-toast.php:32
 #, php-format
@@ -30,31 +30,35 @@ msgstr "Đã bán %s lần"
 #. Name of the plugin
 #: includes/class-plugin.php:29 includes/class-plugin.php:30
 msgid "Vietnam Social Proof Toaster"
-msgstr ""
+msgstr "Social Proof Toaster Việt Nam"
 
 #: includes/class-plugin.php:35 includes/class-plugin.php:36
 msgid "About - Social Proof Toaster"
-msgstr ""
+msgstr "Trang giới thiệu SocialProof"
 
 #: includes/pages/about.php:3 includes/pages/settings.php:3
 msgid "Welcome to Vietnam Social Proof Toaster"
-msgstr ""
+msgstr "Chào bạn tới Vietnam Social Proof Toaster"
 
 #: includes/pages/about.php:6 includes/pages/settings.php:6
 msgid ""
 "Thank you for use our plugin. Next, in this page you can get some helpful "
 "tips."
 msgstr ""
+"Cảm ơn đã sử dụng plugin của chúng tôi. Tiếp theo, trong trang này bạn sẽ "
+"nhận được một số gợi ý hữu ích."
 
 #: includes/pages/about.php:18
 msgid "List of awesome Features"
-msgstr ""
+msgstr "Danh sách các tính năng chính"
 
 #: includes/pages/about.php:22
 msgid ""
 "Pop up notification with total sales at bottom corner when visitor visits "
 "product page."
 msgstr ""
+"Xổ ra popup thông báo với tổng số sales ở góc bên dưới màn hình khách, khi "
+"khách xem trang sản phẩm"
 
 #: includes/pages/about.php:30
 msgid ""
@@ -62,18 +66,21 @@ msgid ""
 "suggest new feature. Do not hesitate to send your request to the developer "
 "via below link"
 msgstr ""
+"Chúng tôi liên tục phát triển plugin này. Nếu bạn gặp bất cứ vấn đề gì hoặc "
+"bạn muốn đề xuất tính năng mới. Đừng ngần ngại gửi yêu cầu đến lập trình "
+"viên thông qua link bên dưới"
 
 #: includes/pages/settings.php:28
 msgid "Hide toast for product not sold yet"
-msgstr ""
+msgstr "Ẩn thông báo cho sản phẩm chưa có lượt bán nào"
 
 #: includes/pages/settings.php:37
 msgid "Hide/show"
-msgstr ""
+msgstr "Ẩn/hiện"
 
 #: includes/pages/settings.php:47
 msgid "Save"
-msgstr ""
+msgstr "Lưu cài đặt"
 
 #. URI of the plugin
 msgid "https://github.com/qtvhao/social-proof-toaster"
