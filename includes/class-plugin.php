@@ -25,10 +25,20 @@ class Plugin {
 		$menu_title  = __('Vietnam Social Proof Toaster', 'haosf');
 		$menu_slug   = 'haosf-proof-toaster';
 		add_submenu_page( $parent_slug, $page_title, $menu_title, 'manage_options', $menu_slug, [$this, 'setting_page']);
+
+		$parent_slug = 'options-general.php';
+		$page_title  = __('About - Social Proof Toaster', 'haosf');
+		$menu_title  = __('About - Social Proof Toaster', 'haosf');
+		$menu_slug   = 'haosf-proof-toaster-about';
+		add_submenu_page( $parent_slug, $page_title, $menu_title, 'manage_options', $menu_slug, [$this, 'about_page']);
 	}
 
 	public function setting_page() {
 		require_once 'pages/settings.php';
+	}
+
+	public function about_page() {
+		require_once 'pages/about.php';
 	}
 
 	public static function instance() {

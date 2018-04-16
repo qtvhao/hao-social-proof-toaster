@@ -7,26 +7,48 @@
     </p>
     <h2 class="nav-tab-wrapper wp-clearfix">
         <a href="<?php echo admin_url( 'options-general.php?page=haosf-proof-toaster' ); ?>"
-           class="nav-tab nav-tab-active">About</a>
+           class="nav-tab ">About</a>
+        <a href="<?php echo admin_url( 'options-general.php?page=haosf-proof-toaster' ); ?>"
+           class="nav-tab nav-tab-active">Settings</a>
     </h2>
-    <div class="feature-section">
-        <h2>
-			<?php echo __( 'List of awesome Features', 'haosf' ); ?>
-        </h2>
-        <div class="inline-svg full-width">
-            <h3>
-				<?php echo __( 'Pop up notification with total sales at bottom corner when visitor visits product page.',
-					'haosf' ) ?>
-            </h3>
-            <picture>
-                <img src="<?php echo HAOSF_ASSETS_URL . 'images/screenshot-1.png' ?>" alt="" style="width:unset">
-            </picture>
-        </div>
-        <p>
-			<?php echo __( 'We continuously develop this plugin. If you meet any issues or you want to suggest new feature. Do not hesitate to send your request to the developer via below link',
-				'haosf' ) ?>
-            <a href="https://github.com/qtvhao/hao-social-proof-toaster/issues">https://github.com/qtvhao/hao-social-proof-toaster/issues</a>
-        </p>
 
-    </div>
+
+	<div id="settings">
+		<form action="<?php echo admin_url('options.php') ?>" method="post">
+			<input type="hidden" name="action" value="update">
+			<?php wp_nonce_field('options-options') ?>
+			<input type="hidden" name="option_page" value="options" />
+			<input type="hidden" name="page_options" value="haosf_toast_hidden_for_product_not_sold_yet" />
+
+
+            <table class="form-table">
+                <tbody>
+                <tr valign="top" class="">
+                    <th scope="row" class="titledesc">
+	                    <?php echo __('Hide toast for product not sold yet','haosf') ?>
+                    </th>
+                    <td class="forminp forminp-checkbox">
+                        <fieldset>
+                            <label>
+                                <input type="checkbox" class="" title=""
+	                                <?php
+	                                checked("on", get_option( 'haosf_toast_hidden_for_product_not_sold_yet', true ));
+	                                ?>                                       name="haosf_toast_hidden_for_product_not_sold_yet">
+                                <span><?php echo __('Hide/show','haosf') ?></span>
+                            </label>
+                        </fieldset>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+			<div>
+				<button type="submit" class="button button-primary">
+					<?php echo __('Save','haosf') ?>
+				</button>
+			</div>
+		</form>
+		<?php do_action( 'haosf_after_settings') ?>
+	</div>
+
 </div>
