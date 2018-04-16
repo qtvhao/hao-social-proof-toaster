@@ -6,10 +6,10 @@
 		<?php echo __( 'Thank you for use our plugin. Next, in this page you can get some helpful tips.', 'haosf' ) ?>
 	</p>
 	<h2 class="nav-tab-wrapper wp-clearfix">
+		<a href="<?php echo admin_url( 'index.php?page=haosf-proof-toaster-about' ); ?>"
+		   class="nav-tab nav-tab-active"><?php echo __('About','haosf') ?></a>
 		<a href="<?php echo admin_url( 'options-general.php?page=haosf-proof-toaster' ); ?>"
-		   class="nav-tab nav-tab-active">About</a>
-		<a href="<?php echo admin_url( 'options-general.php?page=haosf-proof-toaster' ); ?>"
-		   class="nav-tab">Settings</a>
+		   class="nav-tab"><?php echo __('Settings','haosf') ?></a>
 	</h2>
 
 
