@@ -2,7 +2,6 @@
 
 namespace Haosf_Social_Proof_Toaster;
 
-use WC_Order;
 use WC_Order_Item_Product;
 
 class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast{
@@ -17,28 +16,9 @@ class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast{
 	protected function get_image() {
 		return wp_get_attachment_url($this->get_product()->get_image_id());
 	}
-	public static function get_order_product_count( $orders ) {
-		if( ! isset( $orders ) || empty( $orders ) || ! is_array( $orders ) )
-			return 0;
-		$total = array();
-		foreach( $orders as $order ) {
-			$items = new WC_Order( $order );
-			$items = $items->get_items();
-			foreach( $items as $item ) {
-				// If product doesn't exist in order total
-				// then create it with quantity
-				if( ! array_key_exists( $item['product_id'], $total ) ) {
-					$total[$item['product_id']] = [$item];
-				} else {
-					$total[$item['product_id']][] = $item;
-				}
-			}
-		}
-		return $total;
-	}
 
 	protected function get_message_top() {
-		$product_orders = $this->get_product_orders();
+		$product_orders = Helper::get_product_orders( $this->get_product()->get_id() );
 		$order_item_product = $product_orders[0];
 		if ( $order_item_product instanceof  WC_Order_Item_Product) {
 			$shipping_full_name = $order_item_product->get_order()->get_formatted_shipping_full_name();
@@ -90,19 +70,4 @@ class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast{
 
 		return sprintf(__('Units Sold: %s', 'haosf'), $total_sales );
 	}
-
-	private function get_product_orders() {
-
-		$order_ids    = array_map( function ( $order ) {
-			return $order->id;
-		}, wc_get_orders( [] ) );
-		$total_orders = static::get_order_product_count( $order_ids );
-		$product_id   = $this->get_product()->get_id();
-		if(!isset($total_orders[$product_id])) {
-			return [];
-		}
-
-		return $total_orders[$product_id];
-	}
-
 }
