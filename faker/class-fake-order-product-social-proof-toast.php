@@ -13,7 +13,7 @@ class Fake_Order_Product_Social_Proof_Toast extends Order_Count_Product_Social_P
 	}
 
 	protected function get_message_top() {
-		return sprintf( __( '%s just bought', 'haosf' ), $this->buyer_full_name );
+		return sprintf( __( '<span>%s</span> <span>just bought</span>', 'haosf' ), $this->buyer_full_name );
 	}
 
 	protected function get_message_bottom() {
