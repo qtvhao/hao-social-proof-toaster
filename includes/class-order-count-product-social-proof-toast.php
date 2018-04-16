@@ -29,7 +29,7 @@ class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast 
 			return '';
 		}
 
-		return sprintf( __( '%s just bought', 'haosf' ), $shipping_full_name );
+		return sprintf( __( '<span>%s</span> <span>just bought</span>', 'haosf' ), $shipping_full_name );
 	}
 
 	protected function get_message_middle() {
