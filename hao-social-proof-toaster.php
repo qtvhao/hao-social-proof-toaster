@@ -2,6 +2,7 @@
 /**
  *
  * Plugin Name: Vietnam Social Proof Toaster
+ * Description: Pop up order details in bottom corner of visitor's screen when they viewing a product page
  * Plugin URI: https://github.com/qtvhao/social-proof-toaster
  * Author: Hao Nghiem
  * Version: 1.0.0
