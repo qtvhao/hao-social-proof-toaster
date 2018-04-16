@@ -10,6 +10,10 @@ class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast{
 		parent::__construct( $product );
 	}
 
+	protected function get_close_image() {
+		return false;
+	}
+
 	protected function get_image() {
 		return wp_get_attachment_url($this->get_product()->get_image_id());
 	}
@@ -32,11 +36,15 @@ class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast{
 		}
 		return $total;
 	}
+
 	protected function get_message_top() {
 		$product_orders = $this->get_product_orders();
 		$order_item_product = $product_orders[0];
-		/** @var WC_Order_Item_Product $order_item_product */
-		$shipping_full_name = $order_item_product->get_order()->get_formatted_shipping_full_name();
+		if ( $order_item_product instanceof  WC_Order_Item_Product) {
+			$shipping_full_name = $order_item_product->get_order()->get_formatted_shipping_full_name();
+		}else{
+			return '';
+		}
 
 		return sprintf(__('%s just bought', 'haosf'), $shipping_full_name);
 	}
@@ -78,7 +86,7 @@ class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast{
 	}
 
 	protected function get_message_bottom() {
-		$total_sales = static::get_total_sales_per_product($this->get_product()->get_id())->_qty;
+		$total_sales = (int)static::get_total_sales_per_product($this->get_product()->get_id())->_qty;
 
 		return sprintf(__('Units Sold: %s', 'haosf'), $total_sales );
 	}
