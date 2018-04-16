@@ -7,7 +7,7 @@ class Plugin {
 	 * @var Plugin
 	 */
 	private static $instance;
-	private $conditions;
+	public $conditions;
 
 	public static function autoload() {
 		spl_autoload_register(function($class) {
