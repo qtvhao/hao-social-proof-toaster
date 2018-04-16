@@ -16,7 +16,7 @@ class Product_Social_Proof_Toast extends Toast {
 	/**
 	 * @return \WC_Product
 	 */
-	public function getProduct() {
+	public function get_product() {
 		return $this->product;
 	}
 }

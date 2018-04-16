@@ -10,7 +10,7 @@ class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast{
 	}
 
 	protected function get_image() {
-		return wp_get_attachment_url($this->getProduct()->get_image_id());
+		return wp_get_attachment_url($this->get_product()->get_image_id());
 	}
 	public static function get_order_product_count( $orders ) {
 		if( ! isset( $orders ) || empty( $orders ) || ! is_array( $orders ) )
@@ -44,7 +44,7 @@ class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast{
 	}
 
 	protected function get_message_middle() {
-		$product_name = $this->getProduct()->get_name();
+		$product_name = $this->get_product()->get_name();
 		return $product_name;
 	}
 
@@ -58,7 +58,7 @@ class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast{
 			return $order->id;
 		}, wc_get_orders( [] ) );
 		$total_orders = static::get_order_product_count( $order_ids );
-		$product_id   = $this->getProduct()->get_id();
+		$product_id   = $this->get_product()->get_id();
 		if(!isset($total_orders[$product_id])) {
 			return [];
 		}
