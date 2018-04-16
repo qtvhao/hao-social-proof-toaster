@@ -22,6 +22,9 @@ class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast 
 		$order_item_product = $product_orders[0];
 		if ( $order_item_product instanceof WC_Order_Item_Product ) {
 			$shipping_full_name = $order_item_product->get_order()->get_formatted_shipping_full_name();
+			if(empty( trim($shipping_full_name) ) ) {
+				$shipping_full_name = __('Someone', 'haosf');
+			}
 		} else {
 			return '';
 		}
