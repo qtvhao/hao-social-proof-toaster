@@ -8,7 +8,7 @@ class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast{
 	}
 
 	protected function get_image() {
-		return $this->getProduct()->get_image();
+		return wp_get_attachment_url($this->getProduct()->get_image_id());
 	}
 
 }
