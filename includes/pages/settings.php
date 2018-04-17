@@ -32,7 +32,7 @@
                             <label>
                                 <input type="checkbox" class="" title=""
 	                                <?php
-	                                checked("on", get_option( 'haosf_toast_hidden_for_product_not_sold_yet', true ));
+	                                checked("on", get_option( 'haosf_toast_hidden_for_product_not_sold_yet', 'on' ));
 	                                ?>                                       name="haosf_toast_hidden_for_product_not_sold_yet">
                                 <span><?php echo __('Hide/show','haosf') ?></span>
                             </label>

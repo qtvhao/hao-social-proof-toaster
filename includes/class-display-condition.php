@@ -23,11 +23,11 @@ class Display_Condition {
 			$is_product_ordered = ! empty( $product_orders ) and $product_orders[0] instanceof \WC_Order_Item_Product;
 			$is_product_sold = isset( $total_sales->_qty ) and $total_sales->_qty > 0;
 
-			$is_hidden_product_not_sold = Plugin::instance()->setting( 'hidden_for_product_not_sold_yet', true );
+			$is_hidden_product_not_sold = Plugin::instance()->setting( 'hidden_for_product_not_sold_yet', 'on' );
 			if ( $is_product_ordered and $is_product_sold ) {
 				return true;
 			} else {
-				if ( ! $is_hidden_product_not_sold ) {
+				if ( $is_hidden_product_not_sold !== 'on' ) {
 					return true;//callback hell
 				}
 			}
