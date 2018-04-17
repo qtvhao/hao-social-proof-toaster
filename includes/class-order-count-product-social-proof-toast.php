@@ -19,6 +19,9 @@ class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast 
 
 	protected function get_message_top() {
 		$product_orders     = Helper::get_product_orders( $this->get_product()->get_id() );
+		if(!isset($product_orders[0])) {
+			return '';
+		}
 		$order_item_product = $product_orders[0];
 		if ( $order_item_product instanceof WC_Order_Item_Product ) {
 			$shipping_full_name = $order_item_product->get_order()->get_formatted_shipping_full_name();
@@ -39,7 +42,12 @@ class Order_Count_Product_Social_Proof_Toast extends Product_Social_Proof_Toast 
 	}
 
 	protected function get_message_bottom() {
-		$total_sales = (int) Helper::get_total_sales_per_product( $this->get_product()->get_id() )->_qty;
+		$total_sales_per_product = Helper::get_total_sales_per_product( $this->get_product()->get_id() );
+		if ( isset($total_sales_per_product) and isset($total_sales_per_product->_qty) ) {
+			$total_sales = (int) $total_sales_per_product->_qty;
+		} else {
+			$total_sales = 0;
+		}
 
 		return sprintf( __( 'Units Sold: %s', 'haosf' ), $total_sales );
 	}
