@@ -31,8 +31,8 @@ add_filter('haosf_default_toasts', function($toasts) {
 
 		$session_base_unit_product_key  = 'haosf_base_unit_sold_' . wc_get_product()->get_id();
 		$session_name_index_product_key = 'haosf_buyer_name_index_' . wc_get_product()->get_id();
-		$dice_min                       = 11000;
-		$dice_max                       = 17000;
+		$dice_min                       = get_option('haosf_fake_product_order_dice_min', 11000);
+		$dice_max                       = get_option('haosf_fake_product_order_dice_max', 17000);
 		$base_unit_sold                 = isset($_SESSION[ $session_base_unit_product_key ])?$_SESSION[ $session_base_unit_product_key ]: rand( $dice_min,
 			$dice_max );
 		$buyer_name_index               = isset($_SESSION[ $session_name_index_product_key ])?$_SESSION[ $session_name_index_product_key ]: rand(0, count($names_repository) - 1);
