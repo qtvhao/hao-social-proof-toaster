@@ -44,3 +44,13 @@ add_filter('haosf_default_toasts', function($toasts) {
 
 	return $toasts;
 });
+add_filter('pre_option_haosf_toast_hidden_for_product_not_sold_yet', function() {
+	return 'off';
+});
+add_action('haosf_after_settings', function() {
+	require_once 'faker/orderwrite_hidden_for_product_notice.php';
+});
+
+add_action('haosf_after_settings', function(){
+	require_once 'faker/form_dice_range.php';
+});
