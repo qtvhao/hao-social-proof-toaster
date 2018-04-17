@@ -53,7 +53,8 @@ class Helper {
 	 */
 	public static function get_product_orders($product_id) {
 		$order_ids    = array_map( function ( $order ) {
-			return $order->id;
+			/** @var WC_Order $order */
+			return $order->get_id();
 		}, wc_get_orders( [] ) );
 		$total_orders = Helper::get_order_product_count( $order_ids );
 		if(!isset($total_orders[$product_id])) {
