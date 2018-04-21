@@ -5,7 +5,7 @@
  * Description: Pop up order details in bottom corner of visitor's screen when they viewing a product page
  * Plugin URI: https://github.com/qtvhao/social-proof-toaster
  * Author: Hao Nghiem
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author URI: https://www.linkedin.com/in/hào-nghiêm-xuân-b61a60106/
  * Text Domain: haosf
  * License: GPLv3
@@ -17,7 +17,7 @@
 
 use Haosf_Social_Proof_Toaster\Plugin;
 
-define( 'HAOSF_VERSION', '1.0.0' );
+define( 'HAOSF_VERSION', '1.1.0' );
 
 define( 'HAOSF__FILE__', __FILE__ );
 define( 'HAOSF_PLUGIN_BASE', plugin_basename( HAOSF__FILE__ ) );
