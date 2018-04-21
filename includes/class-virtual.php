@@ -18,6 +18,9 @@ class Virtual {
 	public function enable_virtual_product_order_toast() {
 		add_filter('haosf_post_toasts', '__return_empty_string', 11);
 		add_filter('haosf_post_toasts', array($this, 'get_virtual_product_order_toast'), 12);
+		add_action('haosf_after_settings', function() {
+			require_once 'pages/settings-virtual.php';
+		});
 	}
 
 	public function get_virtual_product_order_toast() {
