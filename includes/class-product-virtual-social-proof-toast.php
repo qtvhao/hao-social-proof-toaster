@@ -11,20 +11,7 @@ namespace Haosf_Social_Proof_Toaster;
 
 class Product_Virtual_Social_Proof_Toast extends Product_Social_Proof_Toast {
 	protected function get_message_top() {
-		$names_repository = Plugin::instance()->setting( 'names_repository', require 'names-repository.php' );
-		$addresses_repository = Plugin::instance()->setting( 'addresses_repository', require_once 'address-repository.php');
-		shuffle( $names_repository);
-		$person_name      = Plugin::instance()->session->remember( 'uri', 'random_message_top', function () use ( $names_repository ) {
-			return $names_repository[0];
-		});
-
-		$placeholder = <<<HTML
-<span class="haosf_toast_person_name">%s</span> from <span class="haosf_toast_person_address">%s</span>
-HTML;
-
-		$address              = $addresses_repository[0];
-
-		return sprintf($placeholder, $person_name, $address);
+		return do_shortcode( Plugin::instance()->setting( 'virtual_product_message_top_format', __('<span class="haosf_toast_person_name">[haosf_random_name]</span> from <span class="haosf_toast_person_address">[haosf_random_address]</span>')));
 	}
 
 	protected function get_close_image() {
