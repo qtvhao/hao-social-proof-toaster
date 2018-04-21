@@ -18,3 +18,7 @@ Please make sure you installed WooCommerce before.
 * Pop up a notification at bottom corner of screen
 * Show latest order billing information
 * Show total sales for product current viewing
+
+== Screenshots ==
+
+1. **Notification** Pop up order details in bottom corner of visitor's screen when they viewing a product page
