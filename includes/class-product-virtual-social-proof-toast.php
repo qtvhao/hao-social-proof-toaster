@@ -11,7 +11,7 @@ namespace Haosf_Social_Proof_Toaster;
 
 class Product_Virtual_Social_Proof_Toast extends Product_Social_Proof_Toast {
 	protected function get_message_top() {
-		return do_shortcode( Plugin::instance()->setting( 'virtual_product_message_top_format', __('<span class="haosf_toast_person_name">[haosf_random_name]</span> from <span class="haosf_toast_person_address">[haosf_random_address]</span>')));
+		return do_shortcode( Plugin::instance()->setting( 'virtual_product_message_top_format', __('<span class="haosf_toast_person_name">[haosf_random_name]</span> from <span class="haosf_toast_person_address">[haosf_random_address]</span>', 'haosf')));
 	}
 
 	protected function get_close_image() {
@@ -28,13 +28,13 @@ class Product_Virtual_Social_Proof_Toast extends Product_Social_Proof_Toast {
 	}
 
 	protected function get_message_middle() {
-		$format = Plugin::instance()->setting('product_virtual_social_proof_middle_message', __("Just bought <span>%s</span>"));
+		$format = Plugin::instance()->setting('product_virtual_social_proof_middle_message', __("Just bought <span>%s</span>", 'haosf'));
 
 		return sprintf( $format, $this->get_middle_subject());
 	}
 
 	protected function get_message_bottom() {
-		$format = Plugin::instance()->setting('product_virtual_social_proof_middle_message', __("Total sales: %s"));
+		$format = Plugin::instance()->setting('product_virtual_social_proof_middle_message', __("Total sales: %s", 'haosf'));
 		$total_sales = $this->get_virtual_product_order_toast_total_sales();
 
 		return sprintf($format, $total_sales);
