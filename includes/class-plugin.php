@@ -8,6 +8,8 @@ class Plugin {
 	 */
 	private static $instance;
 	public $conditions;
+	public $session;
+	public $virtual;
 
 	public static function autoload() {
 		spl_autoload_register(function($class) {
@@ -22,6 +24,8 @@ class Plugin {
 
 	public function __construct() {
 		$this->conditions = new Display_Condition();
+		$this->session = new Session();
+		$this->virtual = new Virtual();
 	}
 
 	public function admin_menu() {
@@ -57,7 +61,10 @@ class Plugin {
 	}
 
 	public function init_hooks() {
+		if(!session_id()){session_start();}
 		add_action( 'wp_footer', [ $this, 'render_hidden_toasts' ], 0 );
+		$this->shortcodes();
+		$this->virtual->register();
 	}
 
 	public function render_hidden_toasts() {
@@ -101,5 +108,9 @@ HTML;
 	 */
 	public function setting($name, $default = false) {
 		return get_option( 'haosf_toast_' . $name, $default);
+	}
+
+	private function shortcodes() {
+		require_once 'shortcodes.php';
 	}
 }
