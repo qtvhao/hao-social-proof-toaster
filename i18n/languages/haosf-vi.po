@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vietnam Social Proof Toaster\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-16 14:31+0000\n"
-"PO-Revision-Date: 2018-04-16 15:10+0000\n"
+"POT-Creation-Date: 2018-04-21 07:16+0000\n"
+"PO-Revision-Date: 2018-04-21 07:19+0000\n"
 "Last-Translator: root <qtvhao@gmail.com>\n"
 "Language-Team: Tiếng Việt\n"
 "Language: vi\n"
@@ -13,28 +13,301 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/"
 
-#: includes/class-order-count-product-social-proof-toast.php:26
+#: includes/address-repository.php:13
+msgid "An Giang"
+msgstr ""
+
+#: includes/address-repository.php:14
+msgid "Ba Rịa - Vũng Tàu"
+msgstr ""
+
+#: includes/address-repository.php:15
+msgid "Bạc Liêu"
+msgstr ""
+
+#: includes/address-repository.php:16
+msgid "Bắc Kạn"
+msgstr ""
+
+#: includes/address-repository.php:17
+msgid "Bắc Giang"
+msgstr ""
+
+#: includes/address-repository.php:18
+msgid "Bắc Ninh"
+msgstr ""
+
+#: includes/address-repository.php:19
+msgid "Bế Tre"
+msgstr ""
+
+#: includes/address-repository.php:20
+msgid "Bình Dương"
+msgstr ""
+
+#: includes/address-repository.php:21
+msgid "Bình Định"
+msgstr ""
+
+#: includes/address-repository.php:22
+msgid "Bình Phước"
+msgstr ""
+
+#: includes/address-repository.php:23
+msgid "Bình Thuận"
+msgstr ""
+
+#: includes/address-repository.php:24
+msgid "Cà Mau"
+msgstr ""
+
+#: includes/address-repository.php:25
+msgid "Cao Bằng"
+msgstr ""
+
+#: includes/address-repository.php:26
+msgid "Cần Thơ"
+msgstr ""
+
+#: includes/address-repository.php:27
+msgid "Đà Nẵng"
+msgstr ""
+
+#: includes/address-repository.php:28
+msgid "Đăk Lăk"
+msgstr ""
+
+#: includes/address-repository.php:29
+msgid "Đăk Nông"
+msgstr ""
+
+#: includes/address-repository.php:30
+msgid "Đồng Nai"
+msgstr ""
+
+#: includes/address-repository.php:31
+msgid "Đồng Tháp"
+msgstr ""
+
+#: includes/address-repository.php:32
+msgid "Điện Biên"
+msgstr ""
+
+#: includes/address-repository.php:33
+msgid "Gia Lai"
+msgstr ""
+
+#: includes/address-repository.php:34
+msgid "Hà Giang"
+msgstr ""
+
+#: includes/address-repository.php:35
+msgid "Hà Nam"
+msgstr ""
+
+#: includes/address-repository.php:36
+msgid "Hà Nội"
+msgstr ""
+
+#: includes/address-repository.php:37
+msgid "Hà Tĩnh"
+msgstr ""
+
+#: includes/address-repository.php:38
+msgid "Hải Dương"
+msgstr ""
+
+#: includes/address-repository.php:39
+msgid "Hải Phòng"
+msgstr ""
+
+#: includes/address-repository.php:40
+msgid "Hòa Bình"
+msgstr ""
+
+#: includes/address-repository.php:41
+msgid "Hậu Giang"
+msgstr ""
+
+#: includes/address-repository.php:42
+msgid "Hưng Yên"
+msgstr ""
+
+#: includes/address-repository.php:43
+msgid "Hồ Chí Minh"
+msgstr ""
+
+#: includes/address-repository.php:44
+msgid "Khánh Hòa"
+msgstr ""
+
+#: includes/address-repository.php:45
+msgid "Kiên Giang"
+msgstr ""
+
+#: includes/address-repository.php:46
+msgid "Kon Tum"
+msgstr ""
+
+#: includes/address-repository.php:47
+msgid "Lai Châu"
+msgstr ""
+
+#: includes/address-repository.php:48
+msgid "Lào Cai"
+msgstr ""
+
+#: includes/address-repository.php:49
+msgid "Lạng Sơn"
+msgstr ""
+
+#: includes/address-repository.php:50
+msgid "Lâm Đồng"
+msgstr ""
+
+#: includes/address-repository.php:51
+msgid "Long An"
+msgstr ""
+
+#: includes/address-repository.php:52
+msgid "Nam Định"
+msgstr ""
+
+#: includes/address-repository.php:53
+msgid "Nghệ An"
+msgstr ""
+
+#: includes/address-repository.php:54
+msgid "Ninh Bìh"
+msgstr ""
+
+#: includes/address-repository.php:55
+msgid "Ninh Thuận"
+msgstr ""
+
+#: includes/address-repository.php:56
+msgid "Phú Thọ"
+msgstr ""
+
+#: includes/address-repository.php:57
+msgid "Phú Yên"
+msgstr ""
+
+#: includes/address-repository.php:58
+msgid "Quảng Bình"
+msgstr ""
+
+#: includes/address-repository.php:59
+msgid "Quảng Nam"
+msgstr ""
+
+#: includes/address-repository.php:60
+msgid "Quảng Ngãi"
+msgstr ""
+
+#: includes/address-repository.php:61
+msgid "Quảng Ninh"
+msgstr ""
+
+#: includes/address-repository.php:62
+msgid "Quảng Trị"
+msgstr ""
+
+#: includes/address-repository.php:63
+msgid "Sóc Trăng"
+msgstr ""
+
+#: includes/address-repository.php:64
+msgid "Sơn La"
+msgstr ""
+
+#: includes/address-repository.php:65
+msgid "Tây Ninh"
+msgstr ""
+
+#: includes/address-repository.php:66
+msgid "Thái Bình"
+msgstr ""
+
+#: includes/address-repository.php:67
+msgid "Thái Nguyên"
+msgstr ""
+
+#: includes/address-repository.php:68
+msgid "Thanh Hóa"
+msgstr ""
+
+#: includes/address-repository.php:69
+msgid "Thừa Thiên - Huế"
+msgstr ""
+
+#: includes/address-repository.php:70
+msgid "Tiền Giang"
+msgstr ""
+
+#: includes/address-repository.php:71
+msgid "Trà Vinh"
+msgstr ""
+
+#: includes/address-repository.php:72
+msgid "Tuyên Quang"
+msgstr ""
+
+#: includes/address-repository.php:73
+msgid "Vĩnh Long"
+msgstr ""
+
+#: includes/address-repository.php:74
+msgid "Vĩnh Phúc"
+msgstr ""
+
+#: includes/address-repository.php:75
+msgid "Yên Bái"
+msgstr ""
+
+#: includes/class-order-count-product-social-proof-toast.php:29
 msgid "Someone"
 msgstr "Ai đó"
 
-#: includes/class-order-count-product-social-proof-toast.php:32
+#: includes/class-order-count-product-social-proof-toast.php:35
 #, php-format
 msgid "<span>%s</span> <span>just bought</span>"
 msgstr "<span>%s</span> <span>vừa mua sản phẩm</span>"
 
-#: includes/class-order-count-product-social-proof-toast.php:44
+#: includes/class-order-count-product-social-proof-toast.php:52
 #, php-format
 msgid "Units Sold: %s"
 msgstr "Đã bán %s lần"
 
 #. Name of the plugin
-#: includes/class-plugin.php:29 includes/class-plugin.php:30
+#: includes/class-plugin.php:33 includes/class-plugin.php:34
 msgid "Vietnam Social Proof Toaster"
 msgstr "Social Proof Toaster Việt Nam"
 
-#: includes/class-plugin.php:35 includes/class-plugin.php:36
+#: includes/class-plugin.php:39 includes/class-plugin.php:40
 msgid "About - Social Proof Toaster"
 msgstr "Trang giới thiệu SocialProof"
+
+#: includes/class-product-virtual-social-proof-toast.php:14
+#: includes/pages/settings-virtual.php:34
+msgid ""
+"<span class=\"haosf_toast_person_name\">[haosf_random_name]</span> from "
+"<span class=\"haosf_toast_person_address\">[haosf_random_address]</span>"
+msgstr ""
+"<span class=\"haosf_toast_person_name\">[haosf_random_name]</span> ở <span "
+"class=\"haosf_toast_person_address\">[haosf_random_address]</span>"
+
+#: includes/class-product-virtual-social-proof-toast.php:31
+#: includes/pages/settings-virtual.php:48
+#, php-format
+msgid "Just bought <span>%s</span>"
+msgstr "Vừa mua <span>%s</span>"
+
+#: includes/class-product-virtual-social-proof-toast.php:37
+#: includes/pages/settings-virtual.php:62
+#, php-format
+msgid "Total sales: %s"
+msgstr "Tổng %s lượt mua"
 
 #: includes/pages/about.php:3 includes/pages/settings.php:3
 msgid "Welcome to Vietnam Social Proof Toaster"
@@ -47,6 +320,14 @@ msgid ""
 msgstr ""
 "Cảm ơn đã sử dụng plugin của chúng tôi. Tiếp theo, trong trang này bạn sẽ "
 "nhận được một số gợi ý hữu ích."
+
+#: includes/pages/about.php:10 includes/pages/settings.php:10
+msgid "About"
+msgstr ""
+
+#: includes/pages/about.php:12 includes/pages/settings.php:12
+msgid "Settings"
+msgstr ""
 
 #: includes/pages/about.php:18
 msgid "List of awesome Features"
@@ -70,17 +351,58 @@ msgstr ""
 "bạn muốn đề xuất tính năng mới. Đừng ngần ngại gửi yêu cầu đến lập trình "
 "viên thông qua link bên dưới"
 
+#: includes/pages/settings-virtual.php:12
+msgid "Show virtual orders for product"
+msgstr "Hiển thị số đơn ảo cho các sản phẩm"
+
+#: includes/pages/settings-virtual.php:21 includes/pages/settings.php:37
+msgid "Hide/show"
+msgstr "Ẩn/hiện"
+
+#: includes/pages/settings-virtual.php:28
+msgid "Edit top message when popup virtual social proof"
+msgstr "Sửa dòng text ở trên cùng của thông báo số đơn ảo"
+
+#: includes/pages/settings-virtual.php:41
+msgid "Edit middle message when popup virtual social proof"
+msgstr "Sửa dòng text ở giữa của thông báo số đơn ảo"
+
+#: includes/pages/settings-virtual.php:55
+msgid "Edit bottom message when popup virtual social proof"
+msgstr "Sửa dòng text ở dưới cùng của thông báo số đơn ảo"
+
+#: includes/pages/settings-virtual.php:69
+msgid "Names repository for pick randomly"
+msgstr "Chọn ngẫu nhiên tên từ danh sách"
+
+#: includes/pages/settings-virtual.php:85
+msgid "Addresses repository for pick randomly"
+msgstr "Chọn ngẫu nhiên địa chỉ từ danh sách"
+
+#: includes/pages/settings-virtual.php:101
+msgid "Edit what show as total sales in bottom line"
+msgstr "Tùy chỉnh số lượng đơn đã bán ở dòng 3"
+
+#: includes/pages/settings-virtual.php:115
+msgid ""
+"Custom what shown in middle line. Eg. current products or upsell products"
+msgstr ""
+"Tùy chỉnh cho phép hiển thị sản phẩm nào ở dòng 2. Bạn có thể hiển thị tên "
+"SP hiện tại hoặc sản phẩm upsell"
+
+#: includes/pages/settings-virtual.php:132 includes/pages/settings.php:47
+msgid "Save"
+msgstr "Lưu cài đặt"
+
 #: includes/pages/settings.php:28
 msgid "Hide toast for product not sold yet"
 msgstr "Ẩn thông báo cho sản phẩm chưa có lượt bán nào"
 
-#: includes/pages/settings.php:37
-msgid "Hide/show"
-msgstr "Ẩn/hiện"
-
-#: includes/pages/settings.php:47
-msgid "Save"
-msgstr "Lưu cài đặt"
+#. Description of the plugin
+msgid ""
+"Pop up order details in bottom corner of visitor's screen when they viewing "
+"a product page"
+msgstr ""
 
 #. URI of the plugin
 msgid "https://github.com/qtvhao/social-proof-toaster"
