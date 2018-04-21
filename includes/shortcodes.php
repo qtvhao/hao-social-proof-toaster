@@ -2,6 +2,20 @@
 
 use Haosf_Social_Proof_Toaster\Plugin;
 
+add_shortcode( 'haosf_random_address', function ($attrs = []) {
+	$addresses_repository = Plugin::instance()->setting( 'addresses_repository', require_once 'address-repository.php');
+	shuffle( $addresses_repository);
+	return Plugin::instance()->session->remember( 'uri', 'random_address', function () use ( $addresses_repository ) {
+		return $addresses_repository[0];
+	});
+});
+add_shortcode( 'haosf_random_name', function ($attrs = []) {
+	$names_repository = Plugin::instance()->setting( 'names_repository', require 'names-repository.php' );
+	shuffle( $names_repository);
+	return Plugin::instance()->session->remember( 'uri', 'random_name', function () use ( $names_repository ) {
+		return $names_repository[0];
+	});
+});
 add_shortcode( 'haosf_product', function ($attrs = []) {
 	if ( $attrs['current'] ) {
 		return get_the_title();
