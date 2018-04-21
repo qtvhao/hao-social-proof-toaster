@@ -34,7 +34,7 @@ class Product_Virtual_Social_Proof_Toast extends Product_Social_Proof_Toast {
 	}
 
 	protected function get_message_bottom() {
-		$format = Plugin::instance()->setting('product_virtual_social_proof_middle_message', __("Total sales: %s", 'haosf'));
+		$format = Plugin::instance()->setting('product_virtual_social_proof_bottom_message', __("Total sales: %s", 'haosf'));
 		$total_sales = $this->get_virtual_product_order_toast_total_sales();
 
 		return sprintf($format, $total_sales);
